@@ -3,6 +3,7 @@
 // Controllers
 var index = require('../app/controllers/index'),
     auth = require('./auth'),
+    user = require('../app/controllers/user'),
     requireUser = auth.requireUserToken,
     requireAppToken = auth.requireAppToken;
 
