@@ -4,5 +4,5 @@
  */
 
 exports.index = function(req, res){
-  res.render('login', {title: 'I\'m Bored! | CS3380 Database Project'});
+  res.render('info', {title: 'Info'});
 };
