@@ -26,26 +26,6 @@ var userSchema = new Schema({
   },
   token: String,
   name: String,
-  favorites: [{type: mongoose.Schema.ObjectId, ref: 'Business'}]
-});
-
-var businessSchema = new Schema({
-  name: String,
-  type: String,
-
-  // Set up GeoJSON with Mongoose.  Ref: http://stackoverflow.com/questions/15556624/how-does-one-reprsent-mongodb-geojson-fields-in-a-mongoose-schema
-  loc: {
-    type: {type: String},
-    coordinates: [Number] // Note:  Point is <long, lat>
-  },
-
-  phoneNumber: String,
-  description: String,
-  address: String,
-  website: String,
-  hours: String,
-  deals: String,
-  reviews: [String]
 });
 
 // Add GeoJSON index
