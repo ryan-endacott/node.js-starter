@@ -1,0 +1,27 @@
+{
+  "name": "databaseproject",
+  "version": "0.0.1",
+  "description": "Backend for CS3380 database  app.",
+  "main": "server.js",
+  "dependencies": {
+    "express": "~3.3.5",
+    "jade": "~0.34.1",
+    "mongoose": "~3.6.17",
+    "node-uuid": "~1.4.0",
+    "bcrypt": "~0.7.6",
+    "should": "~1.2.2",
+    "supertest": "~0.7.1",
+    "googlemaps": "~0.1.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ryan-endacott/database-project.git"
+  },
+  "author": "Ryan Endacott",
+  "readmeFilename": "README.md"
+}
