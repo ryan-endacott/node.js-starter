@@ -10,7 +10,7 @@ module.exports = {
         code: 401,
         type: 'Unauthorized'
       },
-      message: 'Failed to authenticate with API token.'
+      message: 'Failed to authenticate.'
     });
   }
 
