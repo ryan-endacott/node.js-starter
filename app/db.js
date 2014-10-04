@@ -28,9 +28,6 @@ var userSchema = new Schema({
   name: String,
 });
 
-// Add GeoJSON index
-businessSchema.index({loc: '2dsphere'});
-
 // Generate user API token
 userSchema.pre('save', function(next) {
   // Maybe make this pre init
@@ -88,6 +85,5 @@ userSchema.options.toObject.transform = function (doc, ret, options) {
 
 module.exports = {
   User: mongoose.model('User', userSchema),
-  Business: mongoose.model('Business', businessSchema)
 };
 
