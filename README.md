@@ -1,2 +1,2 @@
-# CS3380 database-project
+# Node.js starter project.
 ================
